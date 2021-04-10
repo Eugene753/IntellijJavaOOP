@@ -2,15 +2,11 @@ package com.class25.ClassTask;
 
 public class Student {
 
-    public void study(){
-        System.out.println("Students studying hard");
-    }
+    public void study(){ System.out.println("Students studying hard"); }
     public void sleep(){
         System.out.println("Students like to sleep");
     }
-    public void eat(){
-        System.out.println("Students like to eat");
-    }
+    public void eat(){ System.out.println("Students like to eat"); }
 }
 
 class SyntaxStudent extends Student{
