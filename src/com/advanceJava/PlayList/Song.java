@@ -33,10 +33,10 @@ public class Song {
     @Override
     public String toString() {
         return
-                name +" "+
-                artist +" "+
-                album +" "+
-                time ;
+                "Name: "+name +" "+
+                "Artist: "+artist +" "+
+                "Album: "+album +" "+
+                "Duration: "+time +" ";
     }
 }
 

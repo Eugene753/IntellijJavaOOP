@@ -19,5 +19,11 @@ public class Test {
 
 
             obj1.print();
+
+            double p;
+            p=((double)10/100);
+        System.out.println(p);
     }
+
+
 }
