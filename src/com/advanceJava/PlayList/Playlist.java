@@ -55,7 +55,7 @@ public class Playlist {
        }
 
    public void menu(){
-       System.out.println("Enter you menu options: "
+       System.out.println("Enter your menu options: "
        + "\n Enter 1 if you would like to add a song to your playlist"
        + "\n Enter 2 if you would like to delete song from you playlist"
        + "\n Enter 3 to print your playlist"
