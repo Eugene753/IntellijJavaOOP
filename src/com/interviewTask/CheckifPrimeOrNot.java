@@ -1,6 +1,7 @@
 package com.interviewTask;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class CheckifPrimeOrNot {
@@ -13,22 +14,33 @@ public class CheckifPrimeOrNot {
             isPrime=checkPrime(i);
                 if(isPrime){
                     list.add(i);
-                }else if(i==startingValue){
-                    list.add(startingValue);
                 }
         }
         return list;
     }
 
    public static boolean checkPrime(int numberToCheck){
-       int remainder;
-       for(int i=2;i<=numberToCheck;i++){
-           remainder=numberToCheck%i;
-           if(remainder==0){
-               return false;
+       boolean bool = true;
+
+       if(numberToCheck>1) {
+           for(int i=2;i<numberToCheck;i++) {
+               if(numberToCheck%i==0) {
+                   return bool=false;
+               }
            }
-           return true;
+       }else {
+           return bool=false;
        }
        return true;
+
    }
+
+    public static void main(String[] args) {
+        CheckifPrimeOrNot checkifPrimeOrNot=new CheckifPrimeOrNot();
+
+
+
+        System.out.println(checkifPrimeOrNot.generate(2,150));
+
+    }
 }

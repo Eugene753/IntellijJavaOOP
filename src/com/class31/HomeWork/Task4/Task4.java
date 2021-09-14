@@ -5,7 +5,7 @@ import java.util.*;
 public class Task4 {
 
     public static void main(String[] args) {
-        double max=0;
+        double max=Integer.MIN_VALUE;
         String str1="";
 
         Map<String,Double> employees=new HashMap<>();
@@ -23,6 +23,8 @@ public class Task4 {
 
         System.out.println("--------------With Iterator--------------------------");
 
+
+
         Set<String> emp= employees.keySet();
 
         Iterator<String> iterator=emp.iterator();
@@ -37,9 +39,10 @@ public class Task4 {
         }
         System.out.println(str1+" "+max);
 
+
         System.out.println("---------------Without Iterator--------------------");
 
-        double max1=0;
+        double max1=Integer.MIN_VALUE;
         String str2="";
 
         Set<Map.Entry<String,Double>> employee=employees.entrySet();
@@ -52,8 +55,9 @@ public class Task4 {
         }
         System.out.println(str2+" "+max1);
 
-
-
+        for(String k:emp){
+            System.out.println(k+" "+employees.get(k));
+        }
 
     }
 }

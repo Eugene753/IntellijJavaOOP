@@ -9,7 +9,7 @@ public class primeNumbers {
         CheckifPrimeOrNot obj1=new CheckifPrimeOrNot();
 
         List<Integer> newList=new ArrayList<>();
-        newList=obj1.generate(25,2);
+        newList=obj1.generate(2,25);
 
         for (Integer a:newList) {
             System.out.print(a+" ");

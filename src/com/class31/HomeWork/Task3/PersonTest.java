@@ -1,5 +1,6 @@
 package com.class31.HomeWork.Task3;
 
+import java.util.Collection;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeMap;
@@ -20,7 +21,13 @@ public class PersonTest {
         employees.put("ID25784151",new Person("Frank","Timberland",30,63000));
         employees.put("ID56745121",new Person("Ron","Penber",36,71000));
 
-        Person.display(employees);
+        //Person.display(employees);
+
+        Collection<Person> personCollection= employees.values();
+
+        for(Person person:personCollection){
+            person.printDetails();
+        }
 
     }
 }

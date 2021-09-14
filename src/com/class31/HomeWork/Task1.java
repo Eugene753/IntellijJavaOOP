@@ -5,6 +5,7 @@ import java.util.*;
 public class Task1 {
 
     public static void main(String[] args) {
+
         Map<String,String> countries=new TreeMap<>();
 
         countries.put("Ukraine","Kiev");
@@ -18,14 +19,39 @@ public class Task1 {
         countries.put("Morocco","Rabat");
         countries.put("Nepal","Kathmandu");
 
+
+        Map<String,String> state=new LinkedHashMap<>();
+
+        state.put("Ukraine","Kiev");
+        state.put("United States","Washington DC");
+        state.put("Albania","Tirana");
+        state.put("Algeria","Algiers");
+        state.put("Angola","Luanda");
+        state.put("Mali","Bamako");
+        state.put("Malta","Valletta");
+        state.put("Mexico","Mexico City");
+        state.put("Morocco","Rabat");
+        state.put("Nepal","Kathmandu");
+
+
+
         Set<String>mapCountries=countries.keySet();
+
         for(String key:mapCountries){
+
             System.out.println(key+": "+countries.get(key));
+
+            String actualValue=state.get(key);
+
+            System.out.println(actualValue);
         }
 
         System.out.println("--------------------------------------------------------");
 
-        Iterator<String> iterator=mapCountries.iterator();
+
+        Set<String>mapCountries2=countries.keySet();
+
+        Iterator<String> iterator=mapCountries2.iterator();
 
         while(iterator.hasNext()){
             String country=iterator.next();
@@ -39,6 +65,19 @@ public class Task1 {
         for(Map.Entry<String,String> country:set){
             System.out.println(country.getKey()+": "+country.getValue());
         }
+
+        System.out.println("-----------------------------------------------------------");
+
+        Collection<String> country=countries.values();
+
+        for(String count:country){
+            System.out.println(count);
+        }
+
+
+
+
+
 
     }
 }

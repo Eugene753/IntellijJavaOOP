@@ -18,7 +18,7 @@ public class Person {
         this.salary=salary;
     }
 
-    public static void display(Map <String,Person> employees) {
+    /*public static void display(Map <String,Person> employees) {
         Set<String> employee = employees.keySet();
         for (String key : employee) {
             System.out.println(key + ": " + employees.get(key));
@@ -31,5 +31,12 @@ public class Person {
                 " LastName = " + lastName +
                 " Age = " + age +
                 " Salary = " + salary;
+    }*/
+
+    public void printDetails(){
+        System.out.println("First name: "+name);
+        System.out.println("Last name: "+lastName);
+        System.out.println("Age: "+age);
+        System.out.println("Salary: "+salary);
     }
 }

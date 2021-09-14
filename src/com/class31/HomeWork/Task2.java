@@ -1,8 +1,7 @@
 package com.class31.HomeWork;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.sql.SQLOutput;
+import java.util.*;
 
 public class Task2 {
 
@@ -23,6 +22,23 @@ public class Task2 {
 
         for(Map.Entry<Integer,String> item:items){
             System.out.println(item.getKey()+": "+item.getValue());
+        }
+
+        System.out.println("----------------------------------------------------");
+
+        for(Map.Entry<Integer,String> item:items){
+            System.out.println(item);
+        }
+
+        Set<Map.Entry<Integer,String>> set=bestBuy.entrySet();
+        Iterator<Map.Entry<Integer,String>> entrySet=bestBuy.entrySet().iterator();
+
+        //HashMap<TreeMap<LinkedHashMap<Set<ArrayList<String>>>>>
+
+        while(entrySet.hasNext()){
+           Map.Entry<Integer,String> entry = entrySet.next();
+            //System.out.println(entry);
+            System.out.println(entry.getKey()+" "+entry.getValue());
         }
 
     }

@@ -19,10 +19,10 @@ public class Task5 {
         list.add(" a");
         list.add(" job");
 
-        String str2="";
+        StringBuilder str2=new StringBuilder();
 
         for(String str:list){
-            str2+=str;
+            str2.append(str);
         }
         System.out.println("String concatenate: "+str2);
 

@@ -1,34 +1,37 @@
 package com.Repl.Traning;
 
-import java.util.*;
+
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.Scanner;
 
 public class Repl {
+
+    public static void gradeCheck(int grade) throws SyntaxStudentException {
+        if(grade>90){
+            throw new SyntaxStudentException("You are an exceptionally awesome student");
+        }else{
+            System.out.println("You are a great student");
+        }
+    }
 
 
 
     public static void main(String[] args) {
-        LinkedList<String> list=new LinkedList<>();
-
-        list.add("null");
-        list.add("Sohil");
-        list.add("Diego");
-        list.add("Alijon");
-        list.add("Asel");
-        list.add("Sumair");
-
-        for(String str:list){
-            System.out.println(str);
-        }
-
-        Iterator<String> iterator=list.iterator();
-
-        while(iterator.hasNext()){
-            String str=iterator.next();
-            System.out.println(str);
+        int num=100;
+        try {
+            gradeCheck(num);
+        }catch(SyntaxStudentException syntaxStudentException){
+            System.out.println(syntaxStudentException);
         }
 
 
+    }
+}
 
-
+class SyntaxStudentException extends Exception{
+    SyntaxStudentException(String msg) {
+        super(msg);
     }
 }
