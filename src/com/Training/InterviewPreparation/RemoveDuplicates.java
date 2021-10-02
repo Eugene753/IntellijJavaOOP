@@ -36,14 +36,15 @@ public class RemoveDuplicates {
 
         int len=arr.length;
 
-        int [] temp=new int[len];
+        int [] temp=new int[len+1];
 
         int b=0;
 
-        //Inside of main method
+        //Inside of main method solution
         for(int i=0;i<len-1;i++){
             if(arr[i]!=arr[i+1]){
-                temp[b++]=arr[i];
+                temp[b]=arr[i];
+                b++;
             }
         }
         temp[b++]=arr[len-1];
@@ -55,9 +56,9 @@ public class RemoveDuplicates {
         }
         System.out.println();
 
-        for(int k=0;k<b;k++){
+        /*for(int k=0;k<b;k++){
             System.out.print(arr[k]+" ");
-        }
+        }*/
 
         System.out.println();
 

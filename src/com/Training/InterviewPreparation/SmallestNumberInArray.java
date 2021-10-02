@@ -15,5 +15,15 @@ public class SmallestNumberInArray {
         }
 
         System.out.println(temp);
+
+        System.out.println("Hello "+23);
+
+        int money = 0;
+
+        if(money>0){
+            System.out.println("Don't spend it all ;)");
+        }else{
+            System.out.println("You should get a job");
+        }
     }
 }

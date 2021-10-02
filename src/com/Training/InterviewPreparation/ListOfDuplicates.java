@@ -35,7 +35,9 @@ public class ListOfDuplicates {
 
 
         int[] nums =  new int[] {3, 1, 2, 7, 3, 8, 1};
+
         Arrays.sort(nums);
+
         for (int i = 0; i < nums.length-1; i++) {
 
             if (nums[i] == nums[i+1]) {

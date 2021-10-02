@@ -16,7 +16,7 @@ public class FindOutWhichNumberIsDuplicate {
         num.add(89);
         num.add(45);
         num.add(8);
-        num.add(7);
+        num.add(1);
         num.add(9);
 
         Collections.sort(num);
