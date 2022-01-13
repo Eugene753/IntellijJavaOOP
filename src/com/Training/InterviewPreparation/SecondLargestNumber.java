@@ -23,6 +23,8 @@ public class SecondLargestNumber {
 
 
 
+
+
         int[]array={2000,1500,55,2,4,7,256,0};
         int largest1=0;
         int secondLargest1=0;
@@ -41,8 +43,11 @@ public class SecondLargestNumber {
                 }
             }
         }
-        System.out.println("Larget 1 "+largest1);
+        System.out.println("Largest 1 "+largest1);
         System.out.println("Second Largest "+secondLargest1);
+
+        
+
 
     }
 }
